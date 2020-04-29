@@ -14,8 +14,15 @@ function getData(type, cb) {
 }
 
 function writeToDocument(type) {
+    var el = document.getElementById("data");
+    el.innerHTML = "";
     getData(type, function(data) {
-        document.getElementById("data").innerHTML = data;
+        data = data.results;
+        
+        data.forEach(function(item) {
+            document.getElementById("data").innerHTML += "<p>" + item.name + "</p>";    
+        })
+        
     });
 }
 
