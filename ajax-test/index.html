@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Ajax Test</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Condensed&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  </head>
 
-<head>
-	<title>Ajax Test</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		type="text/css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-		type="text/css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-		type="text/css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Condensed&display=swap">
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-	<script type="text/javascript" src="main.js"></script>
-</head>
-
-<body>
-	<div class="container">
-		<div class="row justify-content-center">
-			<ul class="nav">
-				<li class="nav-item">
-					<a class="nav-link active" href="#">Active</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Much longer nav link</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Link</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Services</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-    <div id="maps">
-
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Much longer nav link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              >Services</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
-</body>
+    <div class="container-flex">
+      <div class="row search-bar">
+        <nav class="navbar navbar-light bg-light">
+          <form class="form-inline">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </nav>
+      </div>
+    </div>
+  </body>
 
-<footer>
-
-</footer>
-<script>
-    function initmap() {
-        var = new google.maps.Map(getElementByID("maps") {
+  <footer></footer>
+  <script>
+    function initMap() {
+        var = new google.maps.Map(getElementById("map") {
             zoom = 3,
             center : {
                 lat = 53.3562,
@@ -56,11 +79,12 @@
             }
         })
     }
-</script>
-<!-- API KEY: AIzaSyA1aOdxoQDRW8uZfMhxNKUsbp_jmUOvjZo -->
-<script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js">
-</script>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1aOdxoQDRW8uZfMhxNKUsbp_jmUOvjZo&callback=initMap">
-</script>
+  </script>
+  <!-- API KEY: AIzaSyA1aOdxoQDRW8uZfMhxNKUsbp_jmUOvjZo -->
+  <script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1aOdxoQDRW8uZfMhxNKUsbp_jmUOvjZo&callback=initMap"
+  ></script>
 </html>
