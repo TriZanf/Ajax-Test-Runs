@@ -1,0 +1,31 @@
+.nav-item-first {
+    padding: 20px 50px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-bar {
+    background-color: #C0C0C0;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+    text-align: center;
+}
