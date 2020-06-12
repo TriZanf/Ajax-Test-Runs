@@ -1,6 +1,6 @@
 body { 
-  background: url("/images/car-1.jpg") center center fixed;
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url("../bg-pic/benz2.jpg");
+  background: url("/assets/images/car-1.jpg") center center fixed;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url("/assets/images/car-1.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
