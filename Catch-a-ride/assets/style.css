@@ -1,0 +1,9 @@
+.nav-item-first {
+    padding: 20px 50px;
+}
+
+.brand {
+    justify-items: left;
+    padding: 20px 100px;
+    display: inline-block;
+}
