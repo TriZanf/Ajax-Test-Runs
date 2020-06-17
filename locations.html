@@ -34,15 +34,8 @@
           <ul class="nav nav-bar justify-content-center">
             <li class="nav-item-first">
             <a class="navbar-brand nav-link" href="#">
-              <img
-                src="/assets/images/brand-image.png"
-                width="30";
-                height="30";
-                class="navbar-brand"
-                alt=""
-                loading="lazy"
-              />
-              Catch a Ride
+              <img src="/assets/images/brand-image.png" width="30"; height="30"; class="navbar-brand" alt="" loading="lazy">
+            Catch a Ride
             </a>
             </li>
             <li class="nav-item-first">
@@ -65,30 +58,11 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row jumbo-row">
-        <div class="col-8">
-          <div class="jumbotron">
-            <h1 class="display-4">Catch a Ride</h1>
-            <p class="lead">
-              The only website to deliver fast, accurate and affordable rentals
-              and services on the planet!
-            </p>
-            <hr class="my-4" />
-            <p>
-              Browse over 50 locations in 10 different countries!
-            </p>
-            <a class="btn btn-primary btn-lg" href="#" role="button"
-              >Locations</a
-            >
-            <p>
-              <small
-                >Rates and services may vary depending on the country.</small
-              >
-            </p>
-          </div>
+    <div class="container">
+        <div class="row">
+            <div id="map">
+            </div>
         </div>
-      </div>
     </div>
 
     <footer>
@@ -116,11 +90,23 @@
       </div>
     </div>
     </footer>
+    <script>
+        function initmap() {
+            var map = new google.maps.Map(document.getElementByID("map"), {
+                zoom: 3
+                center: {
+                    lat:53.3562,
+                    lng:6.3053,
+                }
+            })
+        }
+
+    </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script
       async
       defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1aOdxoQDRW8uZfMhxNKUsbp_jmUOvjZo&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9Fv5gLag-Lf6jmx5_cTrE6MP41Xxwaks&callback=initMap"
     ></script>
     </div>
   </body>
