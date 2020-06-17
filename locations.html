@@ -1,113 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Condensed&display=swap"
-    />
-    <link rel="stylesheet" href="assets/style.css" type="text/css" />
-    <title>Catch a Ride</title>
-  </head>
 
-  <body>
-  <div id="page-container">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <ul class="nav nav-bar justify-content-center">
-            <li class="nav-item-first">
-            <a class="navbar-brand nav-link" href="#">
-              <img src="/assets/images/brand-image.png" width="30"; height="30"; class="navbar-brand" alt="" loading="lazy">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+		type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Condensed&display=swap" />
+	<link rel="stylesheet" href="assets/style.css" type="text/css" />
+	<title>Catch a Ride</title>
+</head>
+
+<body>
+	<div id="page-container">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<ul class="nav nav-bar justify-content-center">
+						<li class="nav-item-first">
+							<a class="navbar-brand nav-link" href="index.html">
+								<img src="/assets/images/brand-image.png" width="30"; height="30"; class="navbar-brand" alt="" loading="lazy">
             Catch a Ride
             </a>
-            </li>
-            <li class="nav-item-first">
-              <a class="nav-link active brand-icon" href="locations.html">Locations</a>
-            </li>
-            <li class="nav-item-first">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item-first">
-              <a class="nav-link" href="#">Rates</a>
-            </li>
-            <li class="nav-item-first">
-              <a class="nav-link" href="#">Offers</a>
-            </li>
-            <li class="nav-item-first">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+						</li>
+						<li class="nav-item-first">
+							<a class="nav-link active brand-icon" href="locations.html">Locations</a>
+						</li>
+						<li class="nav-item-first">
+							<a class="nav-link" href="#">Services</a>
+						</li>
+						<li class="nav-item-first">
+							<a class="nav-link" href="#">Rates</a>
+						</li>
+						<li class="nav-item-first">
+							<a class="nav-link" href="#">Offers</a>
+						</li>
+						<li class="nav-item-first">
+							<a class="nav-link" href="#">About Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-    <div class="container">
-        <div class="row">
-            <div id="map">
-            </div>
-        </div>
-    </div>
+		<div class="container">
+			<div class="row map-jumbo">
+				<div class="col-6">
+					<div class="jumbotron">
+						<p class="map-callout"> Browse our locations provided by the map bellow to find the best
+							locations to suit your needs.</p>
+					</div>
+                    <div class="jumbotron" id="map">
+                    </div>
+				</div>
+			</div>
+		</div>
 
-    <footer>
-        <div class="container-fluid" id="footer">
-      <div class="row">
-        <div class="col-12">
-          <ul class="nav nav-bar justify-content-center">
-            <li class="nav-item-first">
-              <a class="nav-link active brand-icon" href="#"><small>Legal</small></a>
-            </li>
-            <li class="nav-item-first">
-              <a class="nav-link" href="#"><small>Terms of Service</small></a>
-            </li>
-            <li class="nav-item-first">
-              <a class="nav-link" href="#"><small>Contact us</small></a>
-            </li>
-            <li class="nav-item-first">
-              <a class="nav-link" href="#"><small>Work with us!</small></a>
-            </li>
-            <li class="nav-item-first">
-              <a class="nav-link" href="#"><small>Corporate</small></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    </footer>
-    <script>
-        function initmap() {
-            var map = new google.maps.Map(document.getElementByID("map"), {
-                zoom: 3
+		<footer>
+			<div class="container-fluid" id="footer">
+				<div class="row">
+					<div class="col-12">
+						<ul class="nav nav-bar justify-content-center">
+							<li class="nav-item-first">
+								<a class="nav-link active brand-icon" href="#"><small>Legal</small></a>
+							</li>
+							<li class="nav-item-first">
+								<a class="nav-link" href="#"><small>Terms of Service</small></a>
+							</li>
+							<li class="nav-item-first">
+								<a class="nav-link" href="#"><small>Contact us</small></a>
+							</li>
+							<li class="nav-item-first">
+								<a class="nav-link" href="#"><small>Work with us!</small></a>
+							</li>
+							<li class="nav-item-first">
+								<a class="nav-link" href="#"><small>Corporate</small></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		 <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
                 center: {
-                    lat:53.3562,
-                    lng:6.3053,
+                    lat: 46.619261,
+                    lng: -33.134766
                 }
-            })
+            });
         }
-
     </script>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9Fv5gLag-Lf6jmx5_cTrE6MP41Xxwaks&callback=initMap"
-    ></script>
-    </div>
-  </body>
+		<script
+			src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+		</script>
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9Fv5gLag-Lf6jmx5_cTrE6MP41Xxwaks&callback=initMap">
+		</script>
+	</div>
+</body>
+
 </html>
