@@ -77,6 +77,13 @@ body {
 
 #map {
     z-index: 999;
-    min-height: 360px;
+    min-height: 600px;
 }
 
+#map-search {
+    width: 100%;
+}
+
+.map-header {
+    padding: 1rem 1rem;
+}
